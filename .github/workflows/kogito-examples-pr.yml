@@ -1,16 +1,17 @@
 name: Kogito Examples Build
 
 on:
-  pull_request:
-    types: [opened, synchronize, reopened, ready_for_review]
-    paths-ignore:
-      - 'LICENSE'
-      - '**/.gitignore'
-      - '**.md'
-      - '**.adoc'
-      - '*.txt'
-      - 'docsimg/**'
-      - '.ci/jenkins/**'
+  push:
+  # pull_request:
+  #   types: [opened, synchronize, reopened, ready_for_review]
+  #   paths-ignore:
+  #     - 'LICENSE'
+  #     - '**/.gitignore'
+  #     - '**.md'
+  #     - '**.adoc'
+  #     - '*.txt'
+  #     - 'docsimg/**'
+  #     - '.ci/jenkins/**'
 
 jobs:
   example-build:
